@@ -4,3 +4,9 @@
 .green{
 	color:green;
 }
+.border{
+	border:solid;
+}
+.noborder{
+	border:none;
+}
