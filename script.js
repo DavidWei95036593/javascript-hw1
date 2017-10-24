@@ -1,6 +1,6 @@
 function toggleColor(element){
 	var color = element.className
-	if(color ==="red")
+	if(color === "red")
 	{element.className = "green";
 	}
 	else{
@@ -10,7 +10,7 @@ function toggleColor(element){
 
 var buttonone = document.getElementById("second");
 buttonone.addEventListener("click",function(){
-	var list = document.getElementById("list");
+	var list = document.getElementById("green");
 	toggleColor(list);})
 
 var buttontwo = document.getElementById("second");
@@ -25,8 +25,15 @@ function makeBorder(element){
 		element.className = "border";
 	}
 }
-// var buttonone = document.getElementById("first");
-// buttonone.addEventListener("onclick",function(){
-// 	var paragraph = document.getElementById("text");
-// 	makeBorder(paragraph);
-// })
+function changeButtononeContext(element){
+	var buttonone = element.className;
+	if(butonone ==="first"){
+
+	}
+}
+var buttonone = document.getElementById("first");
+buttonone.addEventListener("click",function(){
+	var paragraph = document.getElementById("noborder");
+	makeBorder(paragraph);
+
+})
