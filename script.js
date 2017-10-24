@@ -8,13 +8,13 @@ function toggleColor(element){
 	}
 }
 
-// var buttonone = document.getElementById("second");
-// buttonone.addEventListener("onclick",function(){
-// 	var list = document.getElementById("list");
-// 	toggleColor(list);})
+var buttonone = document.getElementById("second");
+buttonone.addEventListener("click",function(){
+	var list = document.getElementById("list");
+	toggleColor(list);})
 
 var buttontwo = document.getElementById("second");
-buttontwo.addEventListener("onclick",console.log("hi"))
+buttontwo.addEventListener("click",function(){console.log("hi")});
 
 function makeBorder(element){
 	var border = element.className;
@@ -25,8 +25,8 @@ function makeBorder(element){
 		element.className = "border";
 	}
 }
-var buttonone = document.getElementById("first");
-buttonone.addEventListener("onclick",function(){
-	var paragraph = document.getElementById("text");
-	makeBorder(paragraph);
-})
+// var buttonone = document.getElementById("first");
+// buttonone.addEventListener("onclick",function(){
+// 	var paragraph = document.getElementById("text");
+// 	makeBorder(paragraph);
+// })
