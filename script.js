@@ -50,15 +50,16 @@ var buttonone = document.getElementById("first");
 		changeButtononeContext(context);
 
 		//this change the border of the paragraph
-		//set the index to zero
-		var index = 0;
-		//select all the elements that has the class name "noborder"
-		var paragraph = document.getElementsByClassName("noborder");
-		//use while loop to make border
-		while(index < paragraph.length){
-			makeBorder(paragraph[index]);
-			index +=1;
-	}
+			//set the index to zero
+			var index = 0;
+			//select all the elements that has the class name "noborder"
+			var paragraph = document.getElementsByClassName("noborder");
+			//use while loop to make border
+			while(index < paragraph.length){
+				makeBorder(paragraph[index]);
+				// console.log(paragraph[index].innerHTML);
+				index +=1;
+			}
 })
 //this sets button two
 var buttontwo = document.getElementById("second");
@@ -75,6 +76,7 @@ var buttontwo = document.getElementById("second");
 			//use while loop to change the color
 			while(index < list.length){
 				toggleColor(list[index]);
+				// console.log(list[index].innerHTML);
 				index +=1;
 			}
 		
