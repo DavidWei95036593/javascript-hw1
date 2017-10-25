@@ -12,12 +12,14 @@ function changeButtononeContext(element){
 	var buttonone = element.className;
 	if(buttonone ==="first"){
 		element.innerHTML = "Add Border";
-		buttonone ==="notfirst";
+		element.className ="notfirst";
 	}else{
 		element.innerHTML = "Remove Border";
-		buttonone ==="first";
+		element.className ="first";
 	}
 }
+
+
 
 
 function toggleColor(element){
